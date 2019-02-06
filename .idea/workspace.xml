@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="654e1c2b-a24a-48af-beea-f9c47e3361f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zork.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,10 +17,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Zork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+            <state relative-caret-position="1079">
+              <caret line="675" column="1" selection-start-line="675" selection-start-column="1" selection-end-line="675" selection-end-column="1" />
               <folding>
+                <element signature="e#0#11921#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#23843#23844#0" expanded="true" />
+                <element signature="e#23901#23902#0" expanded="true" />
+                <element signature="e#23949#23950#0" expanded="true" />
+                <element signature="e#23986#23987#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +75,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549481691999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549489302796" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -126,7 +132,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -136,12 +142,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.78507996" />
+      <window_info anchor="bottom" id="Terminal" weight="0.20426288" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23801066" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11545293" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -158,10 +164,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Zork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        <state relative-caret-position="1079">
+          <caret line="675" column="1" selection-start-line="675" selection-start-column="1" selection-end-line="675" selection-end-column="1" />
           <folding>
+            <element signature="e#0#11921#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#23843#23844#0" expanded="true" />
+            <element signature="e#23901#23902#0" expanded="true" />
+            <element signature="e#23949#23950#0" expanded="true" />
+            <element signature="e#23986#23987#0" expanded="true" />
           </folding>
         </state>
       </provider>
