@@ -1,14 +1,20 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.List;
 class Zork {
     public static int counter=0;
     public static int total_money=0;
+    public static int Room_char=0;
+    public static ArrayList<String> contains = new ArrayList<>();
     public static void main(String[] args) {
         System.out.println("|----------------------------|");
         System.out.println("|****************************|");
-        System.out.println("|***WELCOME TO THE PROGRAM**|");
+        System.out.println("|***WELCOME TO THE PROGRAM***|");
         System.out.println("|************ZORK************|");
         System.out.println("|----------------------------|");
+
+        Room_char=(int)(Math.random()*8+1);
+        //System.out.println("Room_char "+Room_char);
         foyer();
     }
     public static void foyer(){
@@ -16,8 +22,12 @@ class Zork {
         String answer="";
         Scanner scanner=new Scanner(System.in);
         System.out.println("'ROOM:'  FOYER   'CONTAIN:'   DEAD SCORPION    'DIRECTION TO:'  (NORTH)\n");
-
+        contains.add("DEAD_SCORPION");
         money();
+        if(Room_char==1){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         while(true){
             System.out.println("which room you want to travel type (NORTH|N).. OR press 'q' to exit");
@@ -33,7 +43,6 @@ class Zork {
             }
         }
 
-
     }
     public static void random(){
 
@@ -46,8 +55,12 @@ class Zork {
         int random=(int)(Math.random()*1000+1);
         System.out.println("'ROOM:'  FRONT_ROOM   'CONTAIN:'   PIANO    'DIRECTION TO:'  (SOUTH|WEST|EAST)\n");
 
-
+        contains.add("PIANO");
         money();
+        if(Room_char==2){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         while(true){
             System.out.println("which room you want to travel type (SOUTH|S),(WEST|W),(EAST|E).. OR press 'q' to exit");
@@ -90,11 +103,14 @@ class Zork {
 
         System.out.println("'ROOM:'  LIBRARY   'CONTAIN:'   SPIDERS    'DIRECTION TO:'  (NORTH|EAST)\n");
        Scanner scanner=new Scanner(System.in);
-
+        contains.add("SPIDERS");
          money();
-
+        if(Room_char==3){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
         while(true){
-            System.out.println("which room you want to travel.. OR press 'q' to exit");
+
             System.out.println("which room you want to travel type (NORTH|N),(EAST|E).. OR press 'q' to exit");
 
             answer=scanner.nextLine();
@@ -129,9 +145,12 @@ class Zork {
         String answer="";
         System.out.println("'ROOM:'  KITCHEN   'CONTAIN:'   BATS    'DIRECTION TO:'  (WEST|NORTH)\n");
         Scanner scanner=new Scanner(System.in);
-
+        contains.add("BATS");
         money();
-
+        if(Room_char==4){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         while(true){
             System.out.println("which room you want to travel type (WEST|W),(NORTH|N).. OR press 'q' to exit");
@@ -167,8 +186,12 @@ class Zork {
         String answer="";
         System.out.println("'ROOM:'  DINING_ROOM   'CONTAIN:'  DUST EMPTY BOX    'DIRECTION TO:'  (SOUTH)\n");
         Scanner scanner=new Scanner(System.in);
-
+        contains.add("DUST EMPTY BOX");
         money();
+        if(Room_char==5){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         while (true){
             System.out.println("which room you want to travel type (SOUTH|S).. OR press 'q' to exit");
@@ -192,8 +215,12 @@ class Zork {
         String answer="";
         System.out.println("'ROOM:'  VALUT   'CONTAIN:'  3 WALKING SKELETONS    'DIRECTION TO:'  (EAST1|E1),(EAST2|E2)\n");
          Scanner scanner=new Scanner(System.in);
-
+         contains.add("3 WALKING SKELETONS ");
          money();
+        if(Room_char==6){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         while(true){
             System.out.println("which room you want to travel type (EAST1|E1),(EAST2|E2).. OR press 'q' to exit");
@@ -223,8 +250,12 @@ class Zork {
         String answer="";
         System.out.println("'ROOM:'  PARLOR   'CONTAIN:'  TREASURE CHEST     'DIRECTION TO:'  (EAST|E),(SOUTH|S)\n");
         Scanner scanner=new Scanner(System.in);
-
+        contains.add("TREASURE CHEST");
         money();
+        if(Room_char==7){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
 
         System.out.println("'ROOM:'  PARLOR   'CONTAIN:'  TREASURE CHEST    'DIRECTION TO:'  (e6|s4)\n");
 
@@ -251,11 +282,14 @@ class Zork {
         String answer="";
         Scanner scanner=new Scanner(System.in);
 
-        money();
-
         System.out.println("YOU ARE IN SECRET ROOM RIGHT NOW\n");
         System.out.println("'ROOM:'  SECRET_ROOM   'CONTAIN:'  PILES OF GOLD    'DIRECTION TO:'  (w6)\n");
-
+        money();
+        if(Room_char==8){
+            System.out.println("YOU LOST ALL OF YOUR MONEY. YOU LOSS");
+            total_money=0;
+        }
+        contains.add("PILES OF GOLD");
         while (true){
             System.out.println("which room you want to travel..  OR press 'q' to exit");
 
@@ -298,6 +332,7 @@ class Zork {
     public  static void exit(){
         System.out.println("YOU VISIT "+counter +" ROOM");
         System.out.println("YOU HAVE "+total_money+" AMOUNT OF MONEY");
+        System.out.println("THE ITEM YOU WAS SEEN:"+contains);
         System.out.println("THANKS");
         System.exit(0);
     }
